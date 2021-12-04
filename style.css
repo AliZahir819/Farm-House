@@ -38,9 +38,13 @@
     color: #fff;
 }
 
-.btn-left{
-    position: absolute;
-    top: 325px;
+.slider-btn{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* .btn-left{
     width: 28px;
     height: 5vh;
     border-radius: 8px;
@@ -51,8 +55,6 @@
 }
 
 .btn-right{
-    position: absolute;
-    margin: -320px 0 0 1315px;
     width: 28px;
     height: 5vh;
     border-radius: 8px;
@@ -60,11 +62,10 @@
     color: #fff;
     border: 1px solid #000;
     cursor: pointer;
-}
+} */
 
 .welcome{
     background-color: rgba(41, 41, 41, .93);
-    height: 70vh;
 }
 
 .welcome h1{
@@ -86,6 +87,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 40px;
+    padding-bottom: 40px;
 }
 
 .r1, .r2, .r3{
@@ -97,8 +99,8 @@
 }
 
 .r1 img, .r2 img, .r3 img{
-    width: 95%;
-    margin: 10px;
+    width: 100%;
+    padding: 10px;
 }
 
 .r1 h1, .r2 h1, .r3 h1{
@@ -121,7 +123,7 @@
 }
 
 .services-section{
-    margin-top: 300px;
+    margin-top: 150px;
 }
 
 .services-section h1{
@@ -141,12 +143,12 @@
 }
 
 .s1, .s2, .s3, .s4{
-    width: 20%;
+    width: auto;
     margin-top: 20px;
 }
 
 .s1 img , .s2 img , .s3 img , .s4 img{
-    padding: 20px 30px;
+    padding: 20px 20px 20px 20px;
 }
 
 .s1 h2 , .s2 h2 , .s3 h2 , .s4 h2{
@@ -418,6 +420,51 @@ footer{
     font-size: 100%;
 }
 
+/* sell styling starts */
+
+.sell-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section-1, .section-2, .section-3, .section-4{
+    width: 23%;
+    border: 1px solid #000;
+    height: auto;
+}
+
+.section-1, .section-2, .section-3, .section-4{
+    margin: 10px 10px 10px 10px;
+}
+
+.section-1 img, .section-2 img, .section-3 img, .section-4 img{
+    width: 100%;
+}
+
+.section-1 h1, p, .section-2 h1, p, .section-3 h1, p, .section-4 h1, p{
+    padding-left: 10px;
+}
+
+.buy-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.section-1 button, .section-2 button, .section-3 button, .section-4 button{
+    width: 100px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 0 10px 0;
+    padding: 6px;
+}
+
+
+/* sell styling ends */
+
 /* Sign Up Page Styling Starts */
 
 .signup {
@@ -595,7 +642,7 @@ footer{
     display: flex;
     background-color: rgb(255, 255, 255);
     width: 50%;
-    height: 80vh;
+    height: 60vh;
     margin: 10vh auto;
     border: 2px solid cornflowerblue;
     border-radius: 8px;
@@ -637,6 +684,79 @@ footer{
     cursor: pointer;
 }
 
+@media (max-width:1090px){
+    .signIn{
+        flex-direction: column;
+        height: auto;
+    }
+    #getpassword, #CNICnumber , #login{
+        margin:10px 150px;
+    }
+}
+
+@media (max-width:1040px){
+    #getpassword, #CNICnumber , #login{
+        margin-left: 120px;
+    }
+}
+
+@media (max-width:900px){
+    #getpassword, #CNICnumber , #login{
+        margin-left: 90px;
+    }
+}
+
+@media (max-width:760px){
+    #getpassword, #CNICnumber , #login{
+        margin-left: 60px;
+    }
+}
+
+@media (max-width:650px){
+    #getpassword, #CNICnumber , #login{
+        margin-left: 30px;
+        width: 230px;
+    }
+}
+
+@media (max-width:560px){
+    #getpassword, #CNICnumber , #login{
+        margin-left: 15px;
+    
+    }
+}
+
+@media (max-width:515px){
+    #getpassword, #CNICnumber , #login{
+        margin-left: 20px;
+    
+    }
+}
+
+@media (max-width:500px){
+    .signIn{
+        width: 60%;
+    }
+}
+
+@media (max-width:430px){
+    .signIn{
+        width: 65%;
+    }
+}
+
+@media (max-width:400px){
+    .signIn{
+        width: 75%;
+    }
+}
+
+@media (max-width:355px){
+    .signIn{
+        width: 85%;
+    }
+}
+
 /* Sign In Page Styling Ends */
 
 @media (max-width:1200px){
@@ -656,6 +776,12 @@ footer{
 
     .review1, .review2{
         width: 43%;
+    }
+}
+
+@media (max-width:1000px){
+    .section-1, .section-2, .section-3, .section-4{
+        width: 40%;
     }
 }
 
@@ -679,7 +805,7 @@ footer{
         display: block;
         cursor: pointer;
     }
-    .main-nav ul {
+    .nav-links {
         flex-direction: column;
         position: fixed;
         width: 100%;
@@ -692,17 +818,17 @@ footer{
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
-    .main-nav ul li{
+    .nav-links li{
         padding: 30px 0 30px 0;
     }
 
-    .main-nav ul li:hover {
+    .nav-links li:hover {
         color: var(--agriox-primary, #334b35);
     }
-    .main-nav ul li a {
+    .nav-links li a {
         color: #000;
     }
-    .main-nav ul.active {
+    .nav-links.active {
         left: 0;
     }
     .hamburger.active .bar:nth-child(2) {
@@ -742,6 +868,17 @@ footer{
     .info{
         width: 90%;
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width:700px){
+    .welcome-row{
+        flex-direction: column;
+    }
+
+    .r1, .r2, .r3{
+        width: 60%;
+        margin: 10px auto;
     }
 }
 
