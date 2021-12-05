@@ -190,7 +190,7 @@ nav {
 
 .nav-links li:hover {
     color: #155a7e;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #155a7e;
 }
 
 .hamburger {
