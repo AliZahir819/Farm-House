@@ -185,11 +185,11 @@ nav {
 .nav-links li {
     margin-right: 35px;
     font-size: 140%;
-    color: #155a7e;
+    color: #fff;
 }
 
 .nav-links li:hover {
-    color: #fff;
+    color: #155a7e;
     border-bottom: 2px solid #fff;
 }
 
