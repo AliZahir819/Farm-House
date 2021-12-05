@@ -185,10 +185,6 @@ nav {
 .nav-links li {
     margin-right: 35px;
     font-size: 140%;
-    
-}
-
-.nav-links a{
     color: #fff;
 }
 
@@ -832,7 +828,7 @@ footer{
     .nav-links li:hover {
         border-bottom:none;
     }
-    .nav-links a{
+    .nav-links li{
         color: #000;
     }
     .nav-links.active {
